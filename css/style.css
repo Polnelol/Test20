@@ -1,0 +1,232 @@
+@font-face {
+	font-family: 'Helvetica-Neue'; 
+	src: url('../fonts/SVN-Helvetica Neue Heavy.ttf'); 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #C4C4C4;
+}
+
+/* a technical element with no semantic meaning, starts with _ */
+._container {
+    max-width: 903px;
+    margin: 0 auto;
+}
+
+.adbro-banner {
+    /* temporary padding to emit content */
+    padding-top: 283px;
+    background: #C4C4C4;
+}
+
+.adbro-banner-top {
+    position: relative;
+    max-width: 700px;
+    min-height: 95px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../img/banner-top-bg.png') no-repeat center;
+    background-size: contain;
+    background-position: bottom;
+    margin-bottom: 55px;
+}
+
+.adbro-banner-top__fish-left-1,
+.adbro-banner-top__fish-left-2 {
+    position: absolute;
+}
+
+.adbro-banner-top__sauce-red {
+    right: 0;
+}
+
+.adbro-banner-top__fish-left-1 {
+    bottom: 10px;
+    left: 90px;
+    transform: rotate(310deg);
+    animation: translateFishOne 2s linear infinite;
+}
+.adbro-banner-top__fish-left-2 {
+    left: 220px;
+    bottom: 10px;
+    transform: rotate(320deg);
+    animation: translateFishTwo 4s linear infinite;
+}
+
+.adbro-banner-top__fish-right-1 {
+    bottom: 5px;
+    right: 100px;
+    animation: translateFishThree 3s linear infinite;
+    transform: rotate(75deg);
+}
+
+.adbro-banner-top__fish-right-2 {
+    right: 160px;
+    bottom: 25px;
+    transform: rotate(40deg);
+    animation: translateFishFour 5s linear infinite;
+}
+
+.adbro-banner-top__fish-right-1,
+.adbro-banner-top__fish-right-2 {
+    position: absolute;
+}
+
+.adbro-banner-top__title {
+    position: absolute;
+    left: 80px;
+    top: 42px;
+    width: 226px;
+    border: 3px solid #000;
+    text-align: center;
+    background: #fff;
+    z-index: 99;
+    animation: translateTitle 2s linear;
+}
+
+.adbro-banner-top__title h1 {
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Helvetica-Neue';
+    color:#CAAA6C;
+    text-transform: uppercase;
+    animation: text-flicker-out-glow 2s linear infinite both;
+}
+
+.adbro-banner-top__sauce {
+    position: absolute;
+    width: 79px;
+    top: -44px;
+    left: 50%;
+    margin-left: -39.5px;
+    display: flex;
+}
+
+.adbro-banner-top__sauce-red,
+.adbro-banner-top__sauce-white {
+    position: absolute;
+}
+
+.adbro-banner-top__sauce-red {
+    right: 0;
+    animation: translateSauceRed 2s linear;
+}
+
+.adbro-banner-top__sauce-white {
+    animation: translateSauceWhite 2s linear;
+}
+
+.adbro-banner-top__logo {
+    position: absolute;
+    top: 33px;
+    right: 228px;
+    z-index: 99;
+    animation: translateLogo 0.6s linear;
+}
+
+.adbro-banner-top__boat {
+    position: absolute;
+    top: 15px;
+    right: 135px;
+    z-index: 99;
+    animation: translateBoat 2s linear;
+}
+
+.adbro-banner-top__boat a {
+    position: relative;
+    display: block;
+    width: 78px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 22px;
+    color: #FF0F12;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+    top: 44px;
+    left: 20px;
+    text-transform: uppercase;
+    animation: translateBtn 2s linear infinite;
+}
+
+.adbro-banner-top__boat img {
+    position: absolute;
+    transform: rotate(-3.03deg);
+}
+
+.adbro-banner-top__control {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 73px;
+    top: -10px;
+}
+
+.adbro-banner-top__control-close,
+.adbro-banner-top__control-info {
+    width: 22px;
+    height: 22px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.adbro-banner-top__control-close {
+    margin-bottom: 7px;
+}
+
+
+.adbro-banner-bottom__items {
+    display: flex;
+    justify-content: space-between;
+    width: 775px; 
+    margin: 0 auto;
+    padding: 15px 10px;
+    border-radius: 3px;
+    border: 1px solid #DEDEDE;
+    background: #fff;
+}
+
+.adbro-banner-bottom__item {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25), 0px 0px 1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.adbro-banner-bottom__title {
+    font-size: 13px;
+    line-height: 43px;
+    color: #404040;
+}
+
+.adbro-banner-bottom__btn {
+    display: block;
+    width: 162px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 37px;
+    text-decoration: none;
+    background: #F6F6F6;
+    border: 0.860465px solid #C2C2C2;
+    border-radius: 3px;
+    color: #404040;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
